@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>String 객체의 메소드 활용</title></head>
+    <body>
+        <h3>String 객체의 메소드 활용</h3>
+        <hr>
+        <script>
+            var a = new String("Boys and Girls");
+            var b = new String("!!!");
+            
+
+            document.write(a.charAt(0)+"<br>");
+            document.write(a.concat(b)+"<br>");
+            document.write(a.indexOf("s")+"<br>");
+            document.write(a.slice(5,8)+"<br>"); //5번 인덱스 부터 8번 전까지
+            document.write(a.substr(5,3)+"<br><hr>");//5번 인덱스 부터 3번째 뒤까지
+    
+
+            var sub = a.split(" ");
+            for(var i=0; i<sub.length; i++)
+            document.write("sub" + i + "=" +sub[i] + "<br>");
+        </script>
+    </body>
+</html>
